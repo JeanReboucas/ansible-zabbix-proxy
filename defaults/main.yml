@@ -25,10 +25,10 @@ zabbix_database_creation: True
 zabbix_database_sqlload: True
 
 # Some role specific vars
-zabbix_proxy_database: mysql
-zabbix_proxy_database_long: mysql
-#zabbix_proxy_database: pgsql
-#zabbix_proxy_database_long: postgresql
+#zabbix_proxy_database: mysql
+#zabbix_proxy_database_long: mysql
+zabbix_proxy_database: pgsql
+zabbix_proxy_database_long: postgresql
 
 # zabbix-proxy specifc vars
 zabbix_proxy_mode: 0
@@ -51,7 +51,7 @@ zabbix_proxy_dbport: 5432
 zabbix_proxy_localbuffer: 0
 zabbix_proxy_offlinebuffer: 1
 zabbix_proxy_heartbeatfrequency: 60
-zabbix_proxy_configfrequency: 3600
+zabbix_proxy_configfrequency: 60
 zabbix_proxy_datasenderfrequency: 1
 zabbix_proxy_startpollers: 5
 zabbix_proxy_startipmipollers: 0
@@ -75,7 +75,7 @@ zabbix_proxy_startdbsyncers: 4
 zabbix_proxy_historycachesize: 8
 zabbix_proxy_historyindexcachesize: 4
 zabbix_proxy_historytextcachesize: 16
-zabbix_proxy_timeout: 3
+zabbix_proxy_timeout: 15
 zabbix_proxy_trappertimeout: 300
 zabbix_proxy_unreachableperiod: 45
 zabbix_proxy_unavaliabledelay: 60
